@@ -1,29 +1,25 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home2 from './pages/Home2';
-import About from './pages/About';
-import Services from './pages/Services';
-import Appointments from './pages/Appointments';
-import Speaking from './pages/Speaking';
+import React from "react";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Programs from "./components/Programs";
+import Testimonials from "./components/Testimonials";
+import Schedule from "./components/Schedule";
+import Coaches from "./components/Coaches";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen bg-earth-light text-earth-dark">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home2 />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/appointments" element={<Appointments />} />
-            <Route path="/speaking" element={<Speaking />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <div className="font-sans bg-black text-white">
+      <Hero />
+      <About />
+      <Programs />
+      <Testimonials />
+      <Schedule />
+      <Coaches />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

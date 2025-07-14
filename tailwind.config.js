@@ -4,13 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        earth: {
-          light: "#e5e2d6",
-          medium: "#f1d782",
-          dark: "#966639",
-          green: "#c5a468",
-          clay: "#000000",
-        },
+        redline: "#d61920",
+        charcoal: "#1e1e1e",
+      },
+      fontFamily: {
+        sans: ['"Open Sans"', "sans-serif"],
+        heading: ['"Bebas Neue"', "sans-serif"],
       },
     },
   },
