@@ -7,7 +7,7 @@ export default function Hero() {
     <section
       className="min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-white relative"
       style={{
-        backgroundImage: {heroImage}, // <-- update with your image path
+        backgroundImage: `url(${heroImage})` // <-- update with your image path
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>

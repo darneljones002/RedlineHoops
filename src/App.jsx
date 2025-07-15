@@ -7,12 +7,14 @@ import Schedule from "./components/Schedule";
 import Coaches from "./components/Coaches";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import CampsAndClinics from "./components/CampsAndClinics.jsx"
 
 function App() {
   return (
     <div className="font-sans bg-black text-white">
       <Hero />
       <About />
+      <CampsAndClinics/>
       <Programs />
       <Testimonials />
       <Schedule />
